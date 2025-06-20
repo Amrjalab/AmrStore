@@ -1,4 +1,6 @@
+import Link from "next/link";
 export default function Footer() {
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-8 mt-12 flex flex-1 ">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center ">
@@ -9,9 +11,10 @@ export default function Footer() {
         </div>
         
         <div className="flex space-x-6">
-          <a href="#" className="hover:text-white transition">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition">Terms of Service</a>
-          <a href="#" className="hover:text-white transition">Contact Us</a>
+          <Link  href="#" className="hover:text-white transition">Privacy Policy</Link>
+          
+         <Link  href="#" className="hover:text-white transition">Terms of Service</Link>
+         <Link  href="#" className="hover:text-white transition">Contact Us</Link>
         </div>
 
       </div>

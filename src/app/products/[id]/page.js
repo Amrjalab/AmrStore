@@ -1,6 +1,7 @@
 
 import { products } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
+import Link from 'next/link';
 
 export default function ProductDetails({ params }) {
   const product = products.find(p => p.id === params.id);
@@ -12,9 +13,9 @@ export default function ProductDetails({ params }) {
       <p className="text-gray-700 mb-6 text-center px-2 sm:px-0">
         Sorry, the product you are looking for does not exist or has been removed.
       </p>
-      <a href="/" className="text-blue-500 hover:underline">
+      <Link href="/" className="text-blue-500 hover:underline">
         Go back to Home
-      </a>
+      </Link>
     </div>
   );
 }
