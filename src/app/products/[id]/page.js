@@ -1,7 +1,6 @@
 
 import { products } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
-import Link from 'next/link';
 
 export default function ProductDetails({ params }) {
   const product = products.find(p => p.id === params.id);
@@ -13,9 +12,9 @@ export default function ProductDetails({ params }) {
       <p className="text-gray-700 mb-6 text-center px-2 sm:px-0">
         Sorry, the product you are looking for does not exist or has been removed.
       </p>
-      <Link href="/" className="text-blue-500 hover:underline">
+      <a href="/" className="text-blue-500 hover:underline">
         Go back to Home
-      </Link>
+      </a>
     </div>
   );
 }
@@ -25,7 +24,7 @@ export default function ProductDetails({ params }) {
       <img
         src={product.image}
         alt={product.name}
-        className="w-full md:w-1/2 h-[550px] object-cover object-[center_58%]   rounded-xl shadow"
+        className="w-full md:w-1/2 h-[530px] object-cover object-[center_5%]   rounded-xl shadow"
       />
       <div className="flex-1 space-y-6 pl-4">
         <h1 className="text-3xl font-bold">{product.name}</h1>
@@ -49,7 +48,7 @@ export default function ProductDetails({ params }) {
          </div>
           <div className=''>
             <h3 className="text-2xl font-semibold mt-4 mb-2">Notes</h3>
-            <p className='w-[25]'>{product.notes}</p>
+            <p className='w-[250px]'>{product.notes}</p>
          </div>
          
         </div>
