@@ -22,7 +22,7 @@ export default function ProductDetails({ params }) {
 
   return (
     <div className="p-8 flex    flex-col md:flex-row gap-16">
-      <img
+      <image
         src={product.image}
         alt={product.name}
         className="w-full md:w-1/2 h-[550px] object-cover object-[center_58%]   rounded-xl shadow"

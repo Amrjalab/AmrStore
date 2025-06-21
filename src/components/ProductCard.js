@@ -4,7 +4,7 @@ export default function ProductCard({ product }) {
   return (
     <Link href={`/products/${product.id}`}>
       <div className="w-[300px] h-[420px] border rounded-xl p-6 shadow overflow-hidden flex flex-col justify-between hover:shadow-lg ">
-        <img
+        <image
           src={product.image}
           alt={product.name}
           className="w-full h-[280px] object-cover rounded"
