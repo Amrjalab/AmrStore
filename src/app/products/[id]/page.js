@@ -25,7 +25,7 @@ export default function ProductDetails({ params }) {
       <img
         src={product.image}
         alt={product.name}
-        className="w-full md:w-1/2 h-[530px] object-cover object-[center_5%]   rounded-xl shadow"
+        className="w-full md:w-1/2 h-[530px] object-cover object-[center_58%]   rounded-xl shadow"
       />
       <div className="flex-1 space-y-6 pl-4">
         <h1 className="text-3xl font-bold">{product.name}</h1>
